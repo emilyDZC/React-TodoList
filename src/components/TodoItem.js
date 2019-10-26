@@ -11,7 +11,6 @@ getStyle = () => {
     borderBottom: '1px #ccc dotted',
     textDecoration: this.props.todo.completed ? 'line-through' : 'none'
   }
-
 }
 
 // markComplete = (element) => {
@@ -29,7 +28,7 @@ getStyle = () => {
         <p>
         <input type="checkbox" onChange={this.props.markComplete.bind(this, id)} /> {' '}      
         { title }
-        <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>x</button>
+        <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>X</button>
         </p>
       </div>
     )
@@ -42,7 +41,7 @@ TodoItem.propTypes = {
 }
 
 const btnStyle = {
-  background: '#ff0000',
+  background: '#f12345', //#ff0000
   color: '#fff',
   border: 'none',
   padding: '5px 9px',
